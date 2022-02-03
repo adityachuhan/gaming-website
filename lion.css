@@ -1,0 +1,274 @@
+body {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    margin: 0px;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* section header */
+
+.header {
+    align-items: center;
+    padding-bottom: 3px;
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+}
+
+.logo p {
+    margin: 0px;
+    color: white;
+}
+
+.logo {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.bag {
+    width: 40%;
+    align-items: center;
+    margin-right: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bag a {
+    color: whitesmoke;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.bag a:hover {
+    color: rgb(255 255 255);
+    text-decoration: underline;
+}
+
+.logo img {
+    height: 57px;
+}
+
+
+/* section header */
+
+
+/* section 2 */
+
+#lp::before {
+    content: " ";
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: center center no-repeat black url(sim.png);
+}
+
+.lp1 {
+    color: white;
+    margin: 60px 30px;
+    font-family: 'Orbitron', sans-serif;
+    border: 11px solid white;
+    font-size: 83px;
+    padding: 27px;
+}
+
+#landingpage h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 150px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    border: 3px solid orange;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.harrison {
+    width: 300px;
+    text-align: center;
+    margin: 51px;
+}
+
+
+/* for image flipping  */
+
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid orange;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+
+/* This container is needed to position the front and back side */
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+}
+
+
+/* Style the back side */
+
+.flip-box-back {
+    background-color: transparent;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+/* for image flipping  */
+
+.content {
+    overflow: auto;
+}
+
+.content p {
+    font-size: 21px;
+    height: 100px;
+}
+
+.content button {
+    background-color: orange;
+    font-weight: bolder;
+    border: 1px solid orange;
+    padding: 7px 9px;
+    border-radius: 9px;
+    margin-top: 26px;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background: transparent;
+    color: orange;
+    border: 0px;
+    transition: all .2s ease-in-out 0s;
+}
+
+
+/* section 2 */
+
+
+/* for leaning linkbox */
+
+#setup {
+    margin: 75px;
+}
+
+.link {
+    display: flex;
+    width: 629px;
+    margin: auto;
+}
+
+.skill {
+    margin: 2px;
+    transform: skewX( 24deg);
+    border: 2px solid transparent;
+    background-color: orange;
+    padding: 6px 10px;
+}
+
+.host {
+    transform: skewX( -24deg);
+}
+
+.skill:hover {
+    background-color: rgb(255 166 0 / 42%);
+    transition: all .2s ease-in-out 0s;
+}
+
+.skill a {
+    transform: skewX( -24deg);
+    margin: 0px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 21px;
+    color: black;
+}
+
+
+/* for leaning linkbox */
+
+
+/* feedback */
+
+h1 {
+    text-align: center;
+    margin: 75px;
+}
+
+#testimonial {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feedback {
+    width: 40%;
+    border: 3px solid orange;
+    padding: 5px 18px;
+    color: white;
+    border-radius: 14px;
+    margin-bottom: 100px;
+}
+
+.feedback p {
+    font-size: 21px;
+}
+
+
+/* feedback */
+
+
+/* footer */
+
+#footer {
+    text-align: center;
+}

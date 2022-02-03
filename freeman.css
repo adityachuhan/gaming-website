@@ -1,0 +1,39 @@
+.header {
+    flex-direction: column;
+    width: 846px;
+}
+
+.logo img {
+    border-radius: 40px;
+}
+
+.logo {
+    margin: 8px 0px;
+}
+
+.bag {
+    width: 67%;
+}
+
+.lp1 {
+    width: 770px;
+    margin: 60px auto;
+}
+
+h1 {
+    width: 846px;
+    margin: 75px 0px;
+}
+
+#landingpage {
+    width: 846px;
+}
+
+#testimonial {
+    width: 846px;
+}
+
+#setup {
+    margin: 0px;
+    width: 846px;
+}
